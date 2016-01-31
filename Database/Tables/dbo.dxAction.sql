@@ -15,7 +15,8 @@ CREATE TABLE [dbo].[dxAction]
 [Original] [bit] NOT NULL CONSTRAINT [DF__dxAction__Origin__1FCDBCEB] DEFAULT ((0)),
 [Image] [image] NULL,
 [FK_dxForm] [int] NULL,
-[LastModified] [timestamp] NOT NULL
+[LastModified] [timestamp] NOT NULL,
+[bit_test] [bit] NOT NULL CONSTRAINT [DF_dxAction_bit_test] DEFAULT ((1))
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
 ALTER TABLE [dbo].[dxAction] ADD CONSTRAINT [PK_dxAction] PRIMARY KEY NONCLUSTERED  ([PK_dxAction]) ON [PRIMARY]
