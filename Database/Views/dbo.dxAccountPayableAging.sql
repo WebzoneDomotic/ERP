@@ -3,6 +3,7 @@ GO
 SET ANSI_NULLS ON
 GO
 -- --------------------------------------------------------------------------------------------
+-- AP 
 create view [dbo].[dxAccountPayableAging] as
 
 Select i.FK_dxCurrency,  d.ID as Currency, l.PK_dxVendor,  l.ID,  l.Name,   i.PK_dxPayableInvoice,
