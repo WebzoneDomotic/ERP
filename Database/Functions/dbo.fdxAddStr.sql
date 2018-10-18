@@ -6,7 +6,7 @@ GO
 
 
 -- --------------------------------------------------------------------------------------------
--- Add a string to and other with separator
+-- Add a string to and other with separator - 2018-03-27
 --
 create function [dbo].[fdxAddStr] ( @s1 varchar(max) , @d varchar(10), @s2 varchar(max) )
 returns varchar(max)
